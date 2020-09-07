@@ -1,0 +1,5 @@
+Credentials cache: API:BC888E9B-65C9-42CF-A33B-2272A24786A1
+        Principal: htoulni@S19.BE
+
+  Issued                Expires               Principal
+Sep  7 18:36:51 2020  Sep  8 04:36:51 2020  krbtgt/S19.BE@S19.BE
