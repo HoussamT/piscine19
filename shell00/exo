@@ -57,4 +57,5 @@ shi-r1-p1% touch midLS
 shi-r1-p1% nano midLS
 
 
-ex05
+ex07
+shi-r1-p1% patch a sw.diff -o b
