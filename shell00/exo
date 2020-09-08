@@ -1,0 +1,60 @@
+Shell00
+
+mkdir (make directory)
+touch make file
+
+
+ex01
+
+shi-r1-p1% touch testShell00
+shi-r1-p1% mkfile 40 testShell00
+shi-r1-p1% touch -t 202006012342 testShell00
+shi-r1-p1% chmod 455 testShell00
+shi-r1-p1% ls -l
+total 8
+-r--r-xr-x  1 htoulni  candidate  40 Jun  1 23:42 testShell00
+shi-r1-p1%
+
+ex02
+shi-r1-p1% mkdir test0
+shi-r1-p1% touch test1
+shi-r1-p1% mkdir test2
+shi-r1-p1% touch test3
+shi-r1-p1% touch test4
+shi-r1-p1% ln test3 test5
+shi-r1-p1% ln -s test0 test6
+shi-r1-p1% ls -l
+total 8
+drwxr-xr-x  2 htoulni  candidate  68 Sep  7 18:48 test0
+-rw-r--r--  1 htoulni  candidate   0 Sep  7 18:48 test1
+drwxr-xr-x  2 htoulni  candidate  68 Sep  7 18:49 test2
+-rw-r--r--  2 htoulni  candidate   0 Sep  7 18:49 test3
+-rw-r--r--  1 htoulni  candidate   0 Sep  7 18:49 test4
+-rw-r--r--  2 htoulni  candidate   0 Sep  7 18:49 test5
+lrwxr-xr-x  1 htoulni  candidate   5 Sep  7 18:49 test6 -> test0
+shi-r1-p1% touch -t 202006012047 test0
+shi-r1-p1% touch -t 202006012146 test1
+shi-r1-p1% touch -t 202006012245 test2
+shi-r1-p1% touch -t 202006012344 test3
+shi-r1-p1% touch -t 202006012343 test4
+shi-r1-p1% touch -t '202006012220' -h -c test6
+shi-r1-p1% ls -l
+total 8
+drwxr-xr-x  2 htoulni  candidate  68 Jun  1 20:47 test0
+-rw-r--r--  1 htoulni  candidate   0 Jun  1 21:46 test1
+drwxr-xr-x  2 htoulni  candidate  68 Jun  1 22:45 test2
+-rw-r--r--  2 htoulni  candidate   0 Jun  1 23:44 test3
+-rw-r--r--  1 htoulni  candidate   0 Jun  1 23:43 test4
+-rw-r--r--  2 htoulni  candidate   0 Jun  1 23:44 test5
+lrwxr-xr-x  1 htoulni  candidate   5 Jun  1 22:20 test6 -> test0
+
+ex03
+shi-r1-p1% cd ex03
+shi-r1-p1% klist > klist.txt
+
+ex04
+shi-r1-p1% touch midLS
+shi-r1-p1% nano midLS
+
+
+ex05
